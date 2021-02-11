@@ -1,10 +1,5 @@
 version: "3.8"
 
-#
-# Help guide:
-# https://maddevs.io/blog/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode/
-#
-
 services:
   database:
     deploy:
