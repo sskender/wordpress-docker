@@ -1,8 +1,36 @@
 # Wordpress Docker
 
-Scalable Wordpress in Docker swarm
+#### Run a scalable and a high availability Wordpress website in Docker swarm
 
-#### Run a high availability Wordpress website accross multiple machines.
+### Running
+
+Run stack:
+
+```bash
+docker stack deploy --compose-file docker-compose.yml wpstack
+```
+
+Re-scale wordpress service:
+
+```bash
+docker service scale wpstack_wordpress=4
+```
+
+Remove stack:
+
+```bash
+docker stack rm wpstack
+```
+
+### Features
+
+- encrypted overlay network
+- wordpress volume mounted to shared persistance storage array
+- database configured for server with 4CPUs and 8GB of RAM
+
+### Model
+
+![Model](model.png)
 
 ### TODO
 
