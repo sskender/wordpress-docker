@@ -1,0 +1,11 @@
+# InnoDB settings
+innodb_buffer_pool_size=4G
+innodb_log_file_size=1G
+
+# Other
+timezone=GMT
+character-set-server=utf8
+collation-server=utf8_general_ci
+max-connect-errors=100000
+max-connections=200
+

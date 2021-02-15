@@ -18,6 +18,7 @@ services:
     networks:
       - backend-net
     volumes:
+      - mariadb.cnf:/etc/mysql/conf.d/mariadb.cnf
       - db_vol:/var/lib/mysql
 
   phpmyadmin:
