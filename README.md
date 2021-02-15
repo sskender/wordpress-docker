@@ -46,3 +46,4 @@ Image is showing the stack running on three Ubuntu demo servers. Database is on 
 - https://maddevs.io/blog/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode/
 - https://hackernoon.com/architecting-a-highly-available-and-scalable-wordpress-using-docker-swarm-traefik-glusterfs-a69186e9f0e
 - https://thenewstack.io/tutorial-create-a-docker-swarm-with-persistent-storage-using-glusterfs/
+- https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04
