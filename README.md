@@ -25,10 +25,12 @@ docker stack rm wpstack
 ### Features
 
 - encrypted overlay network
-- wordpress volume mounted to shared persistance storage array
-- database configured for server with 4CPUs and 8GB of RAM
+- wordpress volume mounted to a shared persistance storage array
+- database performance configured for a server with 4CPUs and 8GB of RAM
 
 ### Model
+
+Image is showing the stack running on three Ubuntu demo servers. Database is on the manager node, and two wordpress instances on each worker node.
 
 ![Model](model.png)
 
