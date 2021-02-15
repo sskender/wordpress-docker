@@ -56,7 +56,7 @@ services:
       - WORDPRESS_DB_PASSWORD=Password123
     image: wordpress:5.5-php7.4-apache
     ports:
-      - "8000:80"
+      - "8080:80"
     networks:
       - backend-net
     volumes:
