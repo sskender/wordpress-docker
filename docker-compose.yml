@@ -15,6 +15,8 @@ services:
       - MYSQL_PASSWORD=Password123
       - MYSQL_DATABASE=wpdb
     image: mariadb:latest
+    networks:
+      - backend-net
     volumes:
       - db_vol:/var/lib/mysql
 
@@ -27,9 +29,11 @@ services:
       restart_policy:
         condition: any
     environment:
-      - PMA_HOST=db
+      - PMA_HOST=database
       - UPLOAD_LIMIT=1024000000
     image: phpmyadmin/phpmyadmin:latest
+    networks:
+      - backend-net
     ports:
       - "9000:80"
 
@@ -53,8 +57,16 @@ services:
     image: wordpress:5.5-php7.4-apache
     ports:
       - "8000:80"
+    networks:
+      - backend-net
     volumes:
       - wp_vol:/var/www/html
+
+networks:
+  backend-net:
+    driver: overlay
+    driver_opts:
+      encrypted: ""
 
 volumes:
   db_vol:
