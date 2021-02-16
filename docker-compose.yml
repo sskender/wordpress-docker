@@ -20,7 +20,7 @@ services:
     ports:
       - "127.0.0.1:3306:3306"
     volumes:
-      - mariadb.cnf:/etc/mysql/conf.d/mariadb.cnf
+      - ./mariadb.cnf:/etc/mysql/conf.d/mariadb.cnf
       - db_vol:/var/lib/mysql
 
   phpmyadmin:
