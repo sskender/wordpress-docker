@@ -34,13 +34,6 @@ Image is showing the stack running on three Ubuntu demo servers. Database is on 
 
 ![Model](model.png)
 
-### TODO
-
-- [ ] persistant storage for multiple wordpress instances
-- [ ] docker secrets for storing passwords
-- [ ] traefik or some kind of proxy
-- [ ] pimp database performance
-
 #### Help guides:
 
 - https://maddevs.io/blog/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode/
