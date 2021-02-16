@@ -1,4 +1,3 @@
-[mysqld]
 # InnoDB settings
 innodb_buffer_pool_size=4G
 innodb_log_file_size=1G
