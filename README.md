@@ -28,6 +28,10 @@ docker stack rm wpstack
 - wordpress volume mounted to a shared persistance storage array
 - database performance configured for a server with 4CPUs and 8GB of RAM
 
+#### Disclaimer
+
+This configuration is intended to run behind a proxy with SSL and a firewall.
+
 ### Model
 
 Image is showing the stack running on three Ubuntu demo servers. Database is on the manager node, and two wordpress instances on each worker node.
