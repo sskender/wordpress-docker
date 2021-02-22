@@ -2,6 +2,22 @@
 
 #### Run a scalable and a high availability Wordpress website in Docker swarm
 
+### Connecting machines
+
+Install Docker on each server.
+
+Run manager node:
+
+```bash
+docker swarm init --advertise-addr=xxx.xxx.xxx.xxx
+```
+
+Connect worker nodes:
+
+```bash
+docker swarm join --token <token> xxx.xxx.xxx.xxx:2377
+```
+
 ### Running
 
 Run stack:
@@ -14,6 +30,12 @@ Re-scale wordpress service:
 
 ```bash
 docker service scale wpstack_wordpress=4
+```
+
+Update wordpress service image:
+
+```bash
+docker service update wpstack_wordpress
 ```
 
 Remove stack:
